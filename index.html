@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>K-pop Fan Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+<!----      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"> -->
+      <h1>K-Pop Lovers</h1>
+      <h1>K-Pop Fan Test</h1>
+      <nav>
+        <ul class="navbar-ul">
+          <li><a href="#fan-info" accesskey="i">BTS</a></li>
+          <li><a href="#blackpink-questions" accesskey="b">BLACKPINK</a></li>
+          <li><a href="#newtoka-questions" accesskey="t">NEW TOKA</a></li>
+          <li><a href="#nct-questions" accesskey="n">NCT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <section role="region" aria-labelledby="fan-info">
+          <h2 id="fan-info">Fan Info</h2>
+          <div class="info">
+            <label for="student-name">Ireum:</label>
+            <input type="text" name="fan-name" id="fan-name" />
+          </div>
+          <div class="info">
+            <label for="fan-email">Email:</label>
+            <input type="email" name="fan-email" id="fan-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">Saeng-il:<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="bts-questions">
+          <h2 id="bts-questions">BTS Pop Quiz</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="bts-question-one">
+              <legend>
+                Your fav Bangtan Oppa:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="bts-q1-a1">
+                    <input type="radio" id="bts-q1-a1" name="bts1" value="jin" />
+                    Kim Seokjin
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q1-a2">
+                    <input type="radio" id="bts-q1-a2" name="bts1" value="suga" />
+                    Min Yoon-gi
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q1-a3">
+                    <input type="radio" id="bts-q1-a3" name="bts1" value="j-hope" />
+                    Jung Hoseok
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q1-a4">
+                    <input type="radio" id="bts-q1-a4" name="bts1" value="rm" />
+                    Kim Namjoon
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q1-a5">
+                    <input type="radio" id="bts-q1-a5" name="bts1" value="jimin" />
+                    Park Jimin
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q1-a6">
+                    <input type="radio" id="bts-q1-a6" name="bts1" value="v" />
+                    Kim Taehyung
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q1-a7">
+                    <input type="radio" id="bts-q1-a7" name="bts1" value="jungkook" />
+                    Jeon Jeong-guk
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="bts-question-two">
+              <legend>
+                Your least fav Bangtan Oppa:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="bts-q2-a1">
+                    <input type="radio" id="bts-q2-a1" name="bts2" value="jin" />
+                    Kim Seokjin
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q2-a2">
+                    <input type="radio" id="bts-q2-a2" name="bts2" value="suga" />
+                    Min Yoon-gi
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q2-a3">
+                    <input type="radio" id="bts-q2-a3" name="bts2" value="j-hope" />
+                    Jung Hoseok
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q2-a4">
+                    <input type="radio" id="bts-q2-a4" name="bts2" value="rm" />
+                    Kim Namjoon
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q2-a5">
+                    <input type="radio" id="bts-q2-a5" name="bts2" value="jimin" />
+                    Park Jimin
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q2-a6">
+                    <input type="radio" id="bts-q2-a6" name="bts2" value="v" checked />
+                    Kim Taehyung
+                  </label>
+                </li>
+                <li>
+                  <label for="bts-q2-a7">
+                    <input type="radio" id="bts-q2-a7" name="bts2" value="jungkook" />
+                    Jeon Jeong-guk
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="blackpink-questions">
+          <h2 id="blackpink-questions">Blackpink Pop Quiz</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="blackpink-question-one">
+              <legend>
+                Your fav Unnie/Noona:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="bp-q1-a1">
+                    <input type="radio" id="bp-q1-a1" name="blackpink1" value="jisoo" />
+                    Kim Jisoo
+                  </label>
+                </li>
+                <li>
+                  <label for="bp-q1-a2">
+                    <input type="radio" id="bp-q1-a2" name="blackpink1" value="jennie" />
+                    Kim Jennie
+                  </label>
+                </li>
+                <li>
+                  <label for="bp-q1-a3">
+                    <input type="radio" id="bp-q1-a3" name="blackpink1" value="rose" />
+                    Roseanne Park
+                  </label>
+                </li>
+                <li>
+                  <label for="bp-q1-a4">
+                    <input type="radio" id="bp-q1-a4" name="blackpink1" value="lisa" />
+                    Lalisa Manoban
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="blackpink-question-two">
+              <legend>
+                Your least fav Unnie/Noona:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="bp-q2-a1">
+                    <input type="radio" id="bp-q2-a1" name="blackpink2" value="jisoo" />
+                    Kim Jisoo
+                  </label>
+                </li>
+                <li>
+                  <label for="bp-q2-a2">
+                    <input type="radio" id="bp-q2-a2" name="blackpink2" value="jennie" />
+                    Kim Jennie
+                  </label>
+                </li>
+                <li>
+                  <label for="bp-q2-a3">
+                    <input type="radio" id="bp-q2-a3" name="blackpink2" value="rose" />
+                    Roseanne Park
+                  </label>
+                </li>
+                <li>
+                  <label for="bp-q2-a4">
+                    <input type="radio" id="bp-q2-a4" name="blackpink2" value="lisa" />
+                    Lalisa Manoban
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="newtoka-questions">
+          <h2 id="newtoka-questions">New Toka Pop Quiz</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="newtoka-question-one">
+              <legend>
+                Your fav Unnie/Noona:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="nt-q1-a1">
+                    <input type="radio" id="nt-q1-a1" name="newtoka1" value="minji" />
+                    Minji
+                  </label>
+                </li>
+                <li>
+                  <label for="nt-q1-a1">
+                    <input type="radio" id="nt-q1-a1" name="newtoka1" value="hanni" />
+                    Hanni
+                  </label>
+                </li>
+                <li>
+                  <label for="nt-q1-a1">
+                    <input type="radio" id="nt-q1-a1" name="newtoka1" value="danielle" />
+                    Danielle
+                  </label>
+                </li>
+                <li>
+                  <label for="nt-q1-a1">
+                    <input type="radio" id="nt-q1-a1" name="newtoka1" value="haerin" />
+                    Haerin
+                  </label>
+                </li>
+                <li>
+                  <label for="nt-q1-a1">
+                    <input type="radio" id="nt-q1-a1" name="newtoka1" value="hyein" />
+                    Hyein
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="newtoka-question-two">
+              <legend>
+                Your fav Toka:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="nt-q2-a1">
+                    <input type="radio" id="nt-q2-a1" name="newtoka2" value="newtoka" />
+                    New Toka
+                  </label>
+                </li>
+                <li>
+                  <label for="nt-q2-a2">
+                    <input type="radio" id="nt-q2-a2" name="newtoka2" value="oldtoka" checked />
+                    Old Toka
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="nct-questions">
+          <h2 id="nct-questions">NCT Pop Quiz</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="nct-question-one">
+              <legend>
+                Your fav NCT Oppa:
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="nct-q1-a1">
+                    <input type="radio" id="nct-q1-a1" name="nct1" value="mark" />
+                    Mark Lee
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a2">
+                    <input type="radio" id="nct-q1-a2" name="nct1" value="sion" />
+                    Sion
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a3">
+                    <input type="radio" id="nct-q1-a3" name="nct1" value="renjun" />
+                    Renjun
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a4">
+                    <input type="radio" id="nct-q1-a4" name="nct1" value="ten" />
+                    Ten
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a5">
+                    <input type="radio" id="nct-q1-a5" name="nct1" value="winwin" />
+                    Winwin
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a6">
+                    <input type="radio" id="nct-q1-a6" name="nct1" value="doyoung" />
+                    Doyoung
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a7">
+                    <input type="radio" id="nct-q1-a7" name="nct1" value="hendery" />
+                    Hendery
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a8">
+                    <input type="radio" id="nct-q1-a8" name="nct1" value="chenle" />
+                    Chenle
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a9">
+                    <input type="radio" id="nct-q1-a9" name="nct1" value="yuta" />
+                    Yuta
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a10">
+                    <input type="radio" id="nct-q1-a10" name="nct1" value="taeil" />
+                    Taeil
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a11">
+                    <input type="radio" id="nct-q1-a11" name="nct1" value="jungwoo" />
+                    Jungwoo
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a12">
+                    <input type="radio" id="nct-q1-a12" name="nct1" value="kun" />
+                    Kun
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a13">
+                    <input type="radio" id="nct-q1-a13" name="nct1" value="jisung" />
+                    Jisung
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a14">
+                    <input type="radio" id="nct-q1-a14" name="nct1" value="yushi" />
+                    Yushi
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a15">
+                    <input type="radio" id="nct-q1-a15" name="nct1" value="jaemin" />
+                    Jaemin
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a16">
+                    <input type="radio" id="nct-q1-a16" name="nct1" value="Jeno" />
+                    Jeno
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a17">
+                    <input type="radio" id="nct-q1-a17" name="nct1" value="Xiaojun" />
+                    Xiaojun
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a18">
+                    <input type="radio" id="nct-q1-a18" name="nct1" value="Jaehyun" />
+                    Jaehyun
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a19">
+                    <input type="radio" id="nct-q1-a19" name="nct1" value="haechan" />
+                    Haechan
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a20">
+                    <input type="radio" id="nct-q1-a20" name="nct1" value="yangyang" />
+                    Yangyang
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a21">
+                    <input type="radio" id="nct-q1-a21" name="nct1" value="johnny" />
+                    Johnny
+                  </label>
+                </li>
+                <li>
+                  <label for="nct-q1-a22">
+                    <input type="radio" id="nct-q1-a22" name="nct1" value="taeyong" />
+                    Taeyong
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <button type="submit" id="submitForm" onclick="myFunction()">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        K-pop lovers Inc.<br />
+        Sangaraeland<br />
+        2023
+      </address>
+    </footer>
+    <script>
+      document.getElementById("nct-q1-a1").disabled = true;
+      document.getElementById("bts-q1-a6").disabled = true;
+      document.getElementById("bts-q2-a1").disabled = true;
+      document.getElementById("bts-q2-a2").disabled = true;
+      document.getElementById("bts-q2-a3").disabled = true;
+      document.getElementById("bts-q2-a4").disabled = true;
+      document.getElementById("bts-q2-a5").disabled = true;
+      document.getElementById("bts-q2-a7").disabled = true;
+      document.getElementById("nt-q2-a1").disabled = true;
+      function myFunction() {
+        alert("Thank you! We will be back with better quizzes kids.");
+      }
+    </script>
+  </body>
+</html>
